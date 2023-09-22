@@ -1,0 +1,69 @@
+.sale-banner {
+  position: relative;
+  width: 390px;
+  height: 281px;
+  &__image {
+    object-fit: contain;
+  }
+  &__price {
+    width: 102px;
+    height: 45.8px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $green;
+    padding: 6.49px 7.02px 5.68px;
+    right: 13px;
+    bottom: 14px;
+    border-radius: 5.68px;
+
+    &_old {
+      font-size: 18.08px;
+      @extend %banner-text;
+      position: relative;
+      margin: 0 0 0 -2px;
+      &::after {
+        content: '';
+        border: calc(3.51px / 1.5) $orange solid;
+        width: 100%;
+        position: absolute;
+        left: -2%;
+        top: 29%;
+        border-radius: 50px;
+      }
+    }
+    &_new {
+      font-size: 22.3px;
+      @extend %banner-text;
+      margin: 3px 0 0 0;
+    }
+  }
+  &__timer {
+    background: $orange;
+    border-radius: 7.1px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10.14px;
+    display: inline-flex;
+    padding: 9px 7.1px;
+    width: 100px;
+    position: absolute;
+    left: 13px;
+    bottom: 14px;
+    &_title {
+      @extend %banner-text;
+      font-size: 10.6px;
+      margin: 0;
+    }
+    &_items {
+      @extend %banner-text;
+      display: flex;
+      justify-content: center;
+      font-size: 21.25px;
+      width: 100%;
+      line-height: 1.105rem;
+    }
+  }
+}

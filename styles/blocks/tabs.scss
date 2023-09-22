@@ -1,0 +1,36 @@
+.tabs {
+  &__panel {
+    display: none;
+    &_active {
+      display: block;
+    }
+  }
+  &__nav {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 14px 0 0 0;
+    padding: 0;
+    &-item {
+      height: 100%;
+    }
+    &-btn {
+      margin: 0;
+      padding: 0;
+      width: 80px;
+      height: 66px;
+      &_active {
+        background: $white;
+        border-radius: 10px;
+        z-index: 1000;
+        opacity: 0.4;
+      }
+      & > img {
+        width: 81px;
+        border-radius: 10px;
+        height: 66px;
+        object-fit: cover;
+      }
+    }
+  }
+}

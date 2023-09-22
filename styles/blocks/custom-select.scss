@@ -1,0 +1,77 @@
+.custom-select {
+  position: relative;
+  width: 170px;
+  &__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 49px;
+    background-color: $white;
+    color: $dark;
+    font-size: 21.69px;
+    @extend %bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: $radius;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    &::after {
+      flex-shrink: 0;
+      width: 19px;
+      height: 9px;
+      margin-left: 1rem;
+      background-image: url(../../assets/arrow.svg);
+      background-size: cover;
+      position: absolute;
+      right: 9px;
+      content: '';
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &_show &__toggle::after {
+    transform: rotate(180deg);
+  }
+  &_show &__dropdown {
+    display: block;
+  }
+  &_show &__backdrop {
+    display: block;
+  }
+  &__dropdown {
+    position: absolute;
+    top: 3.4rem;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    max-height: 10rem;
+    overflow-y: auto;
+    background-color: $white;
+    border-radius: 11px;
+  }
+  &__options {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__option {
+    padding: 0.2rem 1rem;
+    border: 1px solid transparent;
+    font-size: 12px;
+    &_selected {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &:hover {
+      border: 1px solid $green;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.2s background-color ease-in-out;
+    }
+  }
+}

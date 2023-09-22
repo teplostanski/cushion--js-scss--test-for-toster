@@ -1,0 +1,77 @@
+.product-card {
+  padding: 11px 16px 41.38px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    font-size: 12.07px;
+    &_trust {
+      margin: 0 22px 0 0;
+    }
+    &_sell {
+      color: $green;
+      text-decoration: underline;
+    }
+    & > p {
+      margin: 0;
+    }
+  }
+  &__title {
+    color: $dark;
+    font-size: 19.17px;
+    @extend %bold;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.1rem;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: -1px 0 0 0;
+    &_title {
+      @extend %bold;
+      font-size: $description-font;
+    }
+    &_text {
+      font-size: $description-font;
+      &::after {
+        content: $flag;
+        font-size: 12px;
+        position: absolute;
+        margin: 0 0 0 6px;
+      }
+    }
+    & > p {
+      margin: 0;
+    }
+  }
+  &__selects {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+  &__select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_title {
+      font-size: 10px;
+      margin: 0 0 4px 0;
+    }
+  }
+  &__buy-button {
+    background: $green;
+    font-size: 30px;
+    color: $white;
+    text-transform: uppercase;
+    @extend %normal;
+    border-radius: $radius;
+    padding: 14px 18px 11.3px 15px;
+    line-height: 1.6rem;
+  }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.scss" />
+    <title>CUSHION SHOP</title>
+  </head>
+  <body class="root">
+    <main class="main">
+      <section class="promotion-banner">
+        <p class="promotion-banner__text">
+          Special offer + free delivery 2-4 days in SA
+        </p>
+      </section>
+
+      <section class="logo__wrap">
+        <div class="logo">
+          <div class="logo__icon">
+            <img src="./assets/logo.svg" alt="logo" />
+          </div>
+          <p class="logo__text">orthopedic slippers</p>
+        </div>
+      </section>
+
+      <section class="sale-banner">
+        <img
+          class="sale-banner__image"
+          src="./assets/banner.png"
+          alt="Sale banner"
+        />
+        <div class="sale-banner__timer">
+          <h2 class="sale-banner__timer_title">Limited offer</h2>
+          <div class="sale-banner__timer_items">
+            <span id="hours">00</span>: <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+          </div>
+        </div>
+        <div class="sale-banner__price">
+          <div class="sale-banner__price_old">R 250.00</div>
+          <div class="sale-banner__price_new">R 160.00</div>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div class="product-card__info">
+          <p class="product-card__info_score">Excellent 4.8/5</p>
+          <img
+            class="product-card__info_trust"
+            src="./assets/trustpilot.svg"
+            alt="Trustpilot"
+          />
+          <p class="product-card__info_sell">best selling</p>
+        </div>
+        <h3 class="product-card__title">Orthopedic Slippers</h3>
+        <div class="product-card__tabs">
+          <div class="tabs" data-tabs="tab">
+            <div class="tabs__content">
+              <div class="tabs__panel">
+                <img src="./assets/black.png" alt="" />
+              </div>
+              <div class="tabs__panel">
+                <img src="./assets/orange.png" alt="" />
+              </div>
+              <div class="tabs__panel">
+                <img src="./assets/pink.png" alt="" />
+              </div>
+              <div class="tabs__panel">
+                <img src="./assets/yellow.png" alt="" />
+              </div>
+            </div>
+            <ul class="tabs__nav">
+              <li class="tabs__nav-item">
+                <div class="tabs__nav-btn" type="button">
+                  <img src="./assets/black.png" alt="" />
+                </div>
+              </li>
+              <li class="tabs__nav-item">
+                <div class="tabs__nav-btn" type="button">
+                  <img src="./assets/orange.png" alt="" />
+                </div>
+              </li>
+              <li class="tabs__nav-item">
+                <div class="tabs__nav-btn" type="button">
+                  <img src="./assets/pink.png" alt="" />
+                </div>
+              </li>
+              <li class="tabs__nav-item">
+                <div class="tabs__nav-btn" type="button">
+                  <img src="./assets/yellow.png" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-card__description">
+          <p class="product-card__description_text">
+            <span class="product-card__description_title">Fast Delivery:</span>
+            2-4 days from SA
+          </p>
+          <p class="product-card__description_text">
+            <span class="product-card__description_title">In Stock:</span>
+            Shipping from Johannesburg
+          </p>
+          <fieldset class="rating">
+            <div class="rating__group">
+              <input
+                class="rating__star"
+                type="radio"
+                name="rating"
+                value="1"
+                aria-label="1 звезда"
+              />
+              <input
+                class="rating__star"
+                type="radio"
+                name="rating"
+                value="2"
+                aria-label="2 звезды"
+              />
+              <input
+                class="rating__star"
+                type="radio"
+                name="rating"
+                value="3"
+                aria-label="3 звезды"
+              />
+              <input
+                class="rating__star"
+                type="radio"
+                name="rating"
+                value="4"
+                aria-label="4 звезды"
+              />
+              <input
+                class="rating__star"
+                type="radio"
+                name="rating"
+                value="5"
+                aria-label="5 звёзд"
+                checked
+              />
+              <span class="rating__count">(10)</span>
+            </div>
+          </fieldset>
+        </div>
+        <div class="product-card__selects">
+          <div class="product-card__select">
+            <h4 class="product-card__select_title">color</h4>
+            <div class="custom-select" id="color-select"></div>
+          </div>
+
+          <div class="product-card__select">
+            <h4 class="product-card__select_title">size</h4>
+            <div class="custom-select" id="size-select"></div>
+          </div>
+        </div>
+
+        <button
+          class="button product-card__buy-button"
+          onclick="window.location.href = 'https://youtube.com';"
+        >
+          buy now
+        </button>
+      </section>
+    </main>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>

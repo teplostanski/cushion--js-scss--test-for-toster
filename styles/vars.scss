@@ -1,0 +1,19 @@
+%bold {
+  font-family: Gotham Pro Bold;
+  font-weight: 700;
+}
+
+%normal {
+  font-family: Gotham Pro;
+  font-weight: 400;
+}
+
+%banner-text {
+  color: $white;
+  text-transform: uppercase;
+  @extend %bold;
+}
+
+$radius: 15px;
+$flag: '🇿🇦';
+$description-font: 15.29px;
